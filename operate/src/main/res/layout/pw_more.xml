@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#fff"
+    >
+
+
+    <TextView
+        android:id="@+id/tv_control"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="控制台"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tv_homepage"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="首页"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="价格"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+
+
+    <TextView
+        android:id="@+id/tv_constra_us"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="联系我们"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="登录"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="注册"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+
+
+</LinearLayout>

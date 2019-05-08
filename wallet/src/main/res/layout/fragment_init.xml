@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_bg"
+    >
+
+    <!--<include-->
+        <!--android:id="@+id/init_title"-->
+        <!--layout="@layout/secure_title" />-->
+
+    <LinearLayout
+        android:id="@+id/init_title"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="90 wallet"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/init_title" />
+
+    <!--创建钱包-->
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_wallet_create"
+        android:layout_width="293.33dp"
+        android:layout_height="146.67dp"
+        android:layout_marginTop="33.33dp"
+        android:background="#191C21"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_preview">
+
+        <ImageView
+            android:id="@+id/iv_wallet_create"
+            android:layout_width="96dp"
+            android:layout_height="82.67dp"
+            android:layout_marginTop="17.33dp"
+            android:src="@drawable/wallet_create"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_wallet_create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.67dp"
+            android:text="登录"
+            android:textColor="#FFFFFFFF"
+            android:textSize="14.67sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_wallet_create" />
+    </android.support.constraint.ConstraintLayout>
+
+    <!--恢复钱包-->
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_wallet_restore"
+        android:layout_width="293.33dp"
+        android:layout_height="146.67dp"
+        android:layout_marginTop="13.33dp"
+        android:background="#191C21"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cl_wallet_create">
+
+        <ImageView
+            android:id="@+id/iv_wallet_restore"
+            android:layout_width="96dp"
+            android:layout_height="82.67dp"
+            android:layout_marginTop="17.33dp"
+            android:src="@drawable/wallet_restore"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_wallet_restore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.67dp"
+            android:text="注册"
+            android:textColor="#FFFFFFFF"
+            android:textSize="14.67sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_wallet_restore" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

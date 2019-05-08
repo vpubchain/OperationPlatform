@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.vpubchain.wallet.ui.SelectCoinsFragment"
+    android:background="@color/global_bg">
+
+    <ListView
+        android:id="@+id/coins_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:layout_weight="1"
+        android:drawSelectorOnTop="false" />
+
+
+
+    <TextView
+        android:id="@+id/button_next"
+        android:layout_width="253.33dp"
+        android:layout_height="33.33dp"
+        android:layout_marginBottom="36.67dp"
+        android:background="@drawable/shape_bg_violet"
+        android:gravity="center"
+        android:text="@string/button_finish"
+        android:textColor="@color/textColor"
+        android:textSize="14.67sp"
+        android:layout_gravity="center"
+        />
+
+
+</LinearLayout>

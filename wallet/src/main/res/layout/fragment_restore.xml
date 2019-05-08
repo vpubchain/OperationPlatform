@@ -1,0 +1,178 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_bg"
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_banner"
+        android:layout_width="match_parent"
+        android:layout_height="43dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="创建钱包"
+            android:textColor="@color/textColor"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_home"
+            android:layout_width="18.67dp"
+            android:layout_height="18.67dp"
+            android:layout_marginStart="12.67dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_help"
+            android:layout_width="18.67dp"
+            android:layout_height="18.67dp"
+            android:layout_marginEnd="12.67dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/cl_main"
+                android:layout_width="293.33dp"
+                android:layout_height="336.67dp"
+                android:layout_marginTop="22.67dp"
+                android:background="#191b1e"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_banner">
+
+                <LinearLayout
+                    android:id="@+id/ll_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#2A2E33"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="请输入您的助记词(空格隔开)"
+                        android:textColor="@color/textColor"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@+id/ll_tab"
+                    >
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <MultiAutoCompleteTextView
+                            android:id="@+id/seed"
+                            style="@style/NormalText2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/textColor"
+                            android:textCursorDrawable="@drawable/cursor_color"
+                            android:theme="@style/MyEditText"
+                            android:inputType="textMultiLine|textNoSuggestions"
+                            android:background="@null"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:focusable="true"
+                            android:textSize="20sp"
+                            />
+
+                        <ImageView
+                            android:id="@+id/scan_qr_code"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:contentDescription="@string/scan_qr_code"
+                            android:src="@drawable/scan"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@null"
+                            android:padding="3dp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/restore_message"
+                        style="@style/ErrorText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/restore_error_checksum"
+                        android:layout_marginTop="10dp"/>
+
+
+
+
+                </LinearLayout>
+
+
+
+            </android.support.constraint.ConstraintLayout>
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/seed_entry_skip"
+                android:layout_width="253.33dp"
+                android:layout_height="33.33dp"
+                android:layout_marginTop="36.67dp"
+                android:background="@drawable/shape_bg_violet"
+                android:gravity="center"
+                android:text="跳过"
+                android:textColor="@color/textColor"
+                android:textSize="14.67sp"
+                android:layout_gravity="center"
+                app:layout_constraintTop_toBottomOf="@+id/cl_main"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/button_next"
+                android:layout_width="253.33dp"
+                android:layout_height="33.33dp"
+                android:layout_marginTop="36.67dp"
+                android:background="@drawable/shape_bg_violet"
+                android:gravity="center"
+                android:text="下一步"
+                android:textColor="@color/textColor"
+                android:textSize="14.67sp"
+                android:layout_gravity="center"
+                app:layout_constraintTop_toBottomOf="@+id/seed_entry_skip"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                />
+
+</android.support.constraint.ConstraintLayout>

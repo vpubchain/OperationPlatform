@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="300dp"
+    android:orientation="vertical"
+    android:background="#fff"
+    >
+
+
+    <TextView
+        android:id="@+id/tv_back"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="返回首页"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tv_account"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="我的账户"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/my_node"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="我的节点"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+
+
+    <TextView
+        android:id="@+id/tv_my_order"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="我的订单"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+
+    <TextView
+        android:id="@+id/tv_base_info"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="基础信息"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+
+    <TextView
+        android:id="@+id/tv_capital_flow"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="资金流水"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tv_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="充值"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+
+
+
+</LinearLayout>

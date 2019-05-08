@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <!--<include layout="@layout/include_header"/>-->
+
+
+    <RelativeLayout
+        android:id="@+id/rl_banner"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/banners"
+        ></RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <View
+            android:layout_width="12dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="#000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADVANTAGE"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我们的优势"
+            android:layout_marginTop="5dp"
+            android:textSize="13sp"
+            android:layout_gravity="center_horizontal"/>
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/icon_one"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="操作简单"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="无需任何区块链技术要求，简单几步即可完成节点的安装部署"
+            android:layout_marginTop="10dp"
+            android:textSize="11sp"
+            android:layout_gravity="center_horizontal"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/icon_two"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="价格优惠"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="与全球多个云服务商合作，以最优的价格回馈用户"
+            android:layout_marginTop="10dp"
+            android:textSize="11sp"
+            android:layout_gravity="center_horizontal"/>
+
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/icon_three"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="安全可靠"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="主机使用高端服务器配置，性能稳定，可长时间保持正常工作状态"
+            android:layout_marginTop="10dp"
+            android:textSize="11sp"
+            android:layout_gravity="center_horizontal"/>
+
+
+
+
+        <View
+            android:layout_width="12dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="#000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DATA"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实时监控器"
+            android:layout_marginTop="5dp"
+            android:textSize="13sp"
+            android:layout_gravity="center_horizontal"/>
+
+
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/mPieChart"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/mPieChart2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copyright©2018 Jiuling Blockchain Technology. All Rights Reserved."
+            android:layout_marginTop="50dp"
+            android:textSize="11sp"
+            android:layout_gravity="center_horizontal"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="广州久零区块链技术有限公司 版权所有 | 粤IPC备18084203号"
+            android:layout_marginBottom="10dp"
+            android:textSize="11sp"
+            android:layout_gravity="center_horizontal"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    xmlns:jiapu="http://schemas.android.com/apk/res-auto"
+    >
+
+    <!--<include-->
+        <!--android:id="@+id/ll_header"-->
+        <!--layout="@layout/include_header"/>-->
+
+    <View
+        android:id="@+id/v_top"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/ic_bg"/>
+
+
+    <TextView
+        android:id="@+id/tv_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的订单"
+        android:textSize="22sp"
+        android:textColor="#fff"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="27dp"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="18820785560"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tv_account"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_loginout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="退出"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/ll_amount"
+        android:layout_width="160dp"
+        android:layout_height="25dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_account"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_white_coner4"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/et_serach_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textCursorDrawable="@drawable/shape_cursor"
+            android:background="@null"/>
+
+        <ImageView
+            android:id="@+id/iv_serach"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_serach"/>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="150dp"
+        android:id="@+id/ll_node_title"
+        >
+
+        <Button
+            android:id="@+id/bt_all_node"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="全部订单"
+            android:textColor="#307FC0"
+            android:background="#00ffffff"
+            />
+
+
+
+        <Button
+            android:id="@+id/bt_node_waiting"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="待支付订单"
+            android:background="#00ffffff"
+            android:textColor="#307FC0"
+            />
+
+
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="已完成订单"
+            android:background="#00ffffff"
+            android:textColor="#307FC0"
+            android:id="@+id/bt_node_running"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="180dp"
+        android:id="@+id/vp_node_info">
+
+
+    </android.support.v4.view.ViewPager>
+
+    <!--<com.jiuling.commonbusiness.base.baseRecycler.recycler.LoadRefreshRecyclerView-->
+        <!--android:id="@+id/rcv_node_info"-->
+        <!--android:layout_marginTop="185dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+    <!--</com.jiuling.commonbusiness.base.baseRecycler.recycler.LoadRefreshRecyclerView>-->
+
+
+
+</android.support.constraint.ConstraintLayout>

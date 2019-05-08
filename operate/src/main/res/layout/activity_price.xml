@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+
+    <!--<include-->
+    <!--android:id="@+id/init_title"-->
+    <!--layout="@layout/secure_title" />-->
+
+
+    <LinearLayout
+        android:id="@+id/init_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="价格"
+        android:textSize="32sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/init_title"
+        android:textStyle="bold"
+        android:textColor="#2C3E50"/>
+
+
+    <com.jiuling.commonbusiness.base.baseRecycler.recycler.WrapRecyclerView
+        android:id="@+id/rcv_node_price"
+        app:layout_constraintTop_toBottomOf="@+id/tv_preview"
+        app:layout_constraintBottom_toTopOf="@+id/tv_keep_record"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    </com.jiuling.commonbusiness.base.baseRecycler.recycler.WrapRecyclerView>
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/tv_info"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="广州久零区块链技术有限公司 版权所有 | 粤IPC备18084203号"
+        android:layout_marginBottom="10dp"
+        android:textSize="11sp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/tv_keep_record"
+        app:layout_constraintTop_toBottomOf="@+id/rcv_node_price"
+        app:layout_constraintBottom_toTopOf="@+id/tv_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Copyright©2018 Jiuling Blockchain Technology. All Rights Reserved."
+        android:layout_marginTop="10dp"
+        android:textSize="11sp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"/>
+
+
+
+</android.support.constraint.ConstraintLayout>
+</ScrollView>

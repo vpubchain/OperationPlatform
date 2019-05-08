@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="global_bg">#05060a</color>
+    <color name="control_button1">#B7ACFF</color>
+    <color name="chart_color">#D3706E</color>
+    <color name="line_color">#C23531</color>
+    <color name="control_button2">#999</color>
+    <color name="node_button">#008DE4</color>
+    <color name="chart_color2">#735DFF</color>
+
+</resources>

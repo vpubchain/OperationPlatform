@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/shape_purple"
+    android:paddingLeft="10dp"
+    android:layout_marginTop="10dp">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="节点名称:"
+            android:gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/tv_node_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="MN78455572"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="运行状态:"
+            android:gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="未运行"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:textColor="#548B8E"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="IP:"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="50dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_ip"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="未安装"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="安装状态:"
+            android:gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/tv_install_status"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="未安装"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="钱包地址:"
+            android:gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/tv_wallet_address"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="未安装"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="到期时间:"
+            android:gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2019-05-03 13:10:10"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_more"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_trusteeship_install"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="托管安装"
+            android:gravity="center_vertical"
+            android:textColor="#B7ACFF"/>
+
+
+        <TextView
+            android:id="@+id/tv_node_renew"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="节点续费"
+            android:gravity="center_vertical"
+            android:textColor="#B7ACFF"/>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

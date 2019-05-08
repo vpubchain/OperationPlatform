@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:id="@+id/refresh_iv"
+        android:src="@drawable/ic_refresh"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#3387CC"/>
+
+</LinearLayout>

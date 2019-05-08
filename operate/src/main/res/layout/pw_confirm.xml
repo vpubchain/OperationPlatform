@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:layout_height="140dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/shape_white_coner3">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提示"
+        app:layout_marginTopPercent="10%h"
+        app:layout_textSizePercent="14%h"
+        android:layout_gravity="center_horizontal" />
+
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="您确定要提交订单吗?"
+        app:layout_marginTopPercent="10%h"
+        app:layout_textSizePercent="12%h"
+        android:layout_gravity="center_horizontal" />
+
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_marginTopPercent="10%h"
+        app:layout_heightPercent="25%h"
+        app:layout_marginLeftPercent="10%w"
+        app:layout_marginRightPercent="10%w"
+        >
+
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="取消"
+            android:gravity="center"
+            android:textColor="#28287E"
+            app:layout_textSizePercent="50%h"
+            android:background="@drawable/shape_button_cancel"
+            app:layout_marginRightPercent="5%w"/>
+
+        <Button
+            android:id="@+id/bt_confirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="确定"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:background="@drawable/shape_button_comfirm"
+            app:layout_textSizePercent="50%h"/>
+
+
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

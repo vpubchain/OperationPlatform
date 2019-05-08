@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#B0B0B0"
+        android:text="账户充值的余额可用于支付订单、节点费用或者用于节点的自动续费扣取。"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#B0B0B0"
+        android:text="注意：最小充值金额为￥10"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#B0B0B0"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#3D3D3D"
+        android:text="充值金额："/>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#B0B0B0"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#3D3D3D"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="支付方式"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="#FFF5EF"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"/>
+        
+        
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_alipay"/>
+
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="大额款项，建议你使用支付宝支付，安全有保障！"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="#FFF5EF"
+        android:layout_marginTop="5dp">
+
+        <RadioButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"/>
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_wechat"/>
+
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小额付款，建议你使用微信支付，安全有保障！"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="#FFF5EF"
+        android:layout_marginTop="5dp">
+
+        <RadioButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"/>
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_balance"/>
+
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="建议你使用余额支付，方便又快捷！"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实付款"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥ 2000.00"
+            android:textSize="18sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textColor="#E63A3A"/>
+
+
+    </LinearLayout>
+    
+    
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:text="确认支付"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_button_buy"/>
+
+    <!--<RadioGroup-->
+        <!--android:layout_marginTop="50dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="300dp">-->
+
+        <!--<RadioButton-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="90dp" />-->
+
+        <!--<RadioButton-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="90dp" />-->
+
+
+        <!--<RadioButton-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="90dp"-->
+            <!--android:background="@drawable/shape_button_buy" />-->
+
+
+
+    <!--</RadioGroup>-->
+
+
+
+
+
+</LinearLayout>
+</ScrollView>

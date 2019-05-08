@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_bg"
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_banner"
+        android:layout_width="match_parent"
+        android:layout_height="43dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="创建钱包"
+            android:textColor="@color/textColor"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_home"
+            android:layout_width="18.67dp"
+            android:layout_height="18.67dp"
+            android:layout_marginStart="12.67dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_help"
+            android:layout_width="18.67dp"
+            android:layout_height="18.67dp"
+            android:layout_marginEnd="12.67dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_main"
+        android:layout_width="293.33dp"
+        android:layout_height="336.67dp"
+        android:layout_marginTop="22.67dp"
+        android:background="#191b1e"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cl_banner">
+
+        <LinearLayout
+            android:id="@+id/ll_tab"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#2A2E33"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="请记下您的助记词"
+                android:textColor="@color/textColor"
+                android:textSize="16sp"
+                android:gravity="center"
+                />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/seed"
+            style="@style/SeedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="deliver broken make enrich core vendor ski help sock spy purse roast token jewel female"
+            android:gravity="center_horizontal"
+            android:textIsSelectable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_tab"/>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_width="253.33dp"
+        android:layout_height="33.33dp"
+        android:layout_marginTop="36.67dp"
+        android:background="@drawable/shape_bg_violet"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="@color/textColor"
+        android:textSize="14.67sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cl_main" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_change"
+        android:layout_width="100dp"
+        android:layout_height="33.33dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shape_bg_seed_change"
+        app:layout_constraintBottom_toTopOf="@+id/tv_next"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:id="@+id/tv_pre_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="换一组"
+            android:textColor="@color/textColor"
+            android:textSize="13.33sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_change"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/change"-->
+            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--app:layout_constraintLeft_toRightOf="@+id/tv_pre_change"-->
+            <!--app:layout_constraintRight_toRightOf="parent"-->
+            <!--app:layout_constraintTop_toTopOf="parent" />-->
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

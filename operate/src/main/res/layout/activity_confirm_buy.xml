@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+
+    <!--<include-->
+    <!--android:id="@+id/init_title"-->
+    <!--layout="@layout/secure_title" />-->
+
+    <!--<include layout="@layout/include_header"/>-->
+
+    <LinearLayout
+        android:id="@+id/init_title"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_confirm_info"
+        app:layout_constraintTop_toBottomOf="@+id/init_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:id="@+id/tv_node_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="维公链主节点"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp"
+            android:textColor="#414141"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_node_info1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:text="用于搭建维公链主节点服务器"
+            android:textColor="#9B9B9B"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_node_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥ 1800"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp"
+            android:textSize="20sp"
+            android:textColor="#414141"
+            android:layout_below="@+id/tv_node_name"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_node_original_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="原价￥2000"
+            android:layout_marginLeft="30dp"
+            android:textSize="12sp"
+            android:textColor="#414141"
+            android:layout_below="@+id/tv_node_price"
+            android:layout_marginTop="2dp"/>
+
+
+
+        <TextView
+            android:id="@+id/tv_node_info2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_node_info1"
+            android:textColor="#9B9B9B"
+            android:minLines="2"
+            android:gravity="center_vertical"
+            android:text="主节点一键部署" />
+
+
+        <TextView
+            android:id="@+id/tv_node_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="包年"
+            android:layout_marginLeft="30dp"
+            android:textSize="14sp"
+            android:layout_below="@+id/tv_node_original_price"
+            android:layout_marginTop="5dp"/>
+
+
+        <TextView
+            android:id="@+id/ll_info"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:textColor="#9B9B9B"
+            android:layout_below="@id/tv_node_info2"
+            android:gravity="center_vertical"
+            android:text="一键打包开通主节点服务"
+            />
+
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/rl_confirm_info"
+        android:layout_width="match_parent"
+        android:id="@+id/ll_buy_count"
+        android:gravity="center_vertical"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_marginLeft="30dp"
+            android:text="购买数量: "/>
+
+        <Button
+            android:id="@+id/iv_reduce"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="-"
+            android:background="@null"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_buy_count"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="1"/>
+
+        <Button
+            android:id="@+id/iv_increase"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="+"
+            android:background="@null"
+            android:textSize="20sp"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/ll_couont"
+        app:layout_constraintTop_toBottomOf="@+id/ll_buy_count"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单合计"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="30sp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥ "
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FF5656"
+            android:layout_marginLeft="10sp"/>
+
+
+        <TextView
+            android:id="@+id/tv_order_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1800"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FF5656"
+            android:layout_marginLeft="10sp"/>
+
+
+
+
+
+    </LinearLayout>
+
+    <Button
+        app:layout_constraintTop_toBottomOf="@+id/ll_couont"
+        android:id="@+id/bt_buy"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="30dp"
+        android:textColor="#fff"
+        android:text="立即购买"
+        android:background="@drawable/shape_button_buy"
+        />
+
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
+</ScrollView>

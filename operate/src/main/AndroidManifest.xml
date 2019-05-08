@@ -1,0 +1,41 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.jiuling.operate">
+
+    <application
+        tools:replace="android:allowBackup"
+        android:allowBackup="true" android:label="@string/app_name"
+        android:supportsRtl="true">
+
+        <activity android:name="com.jiuling.operate.ui.OperateMainActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name="com.jiuling.operate.ui.OperateLoginActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name="com.jiuling.operate.ui.OperateRegisterActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name="com.jiuling.operate.ui.OperateControlActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name="com.jiuling.operate.ui.OperateRechargeActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name="com.jiuling.operate.ui.OperateInformationActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name="com.jiuling.operate.ui.OperateContactUsActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name="com.jiuling.operate.ui.OperatePriceActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name="com.jiuling.operate.ui.OperateConfirmBuyActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name="com.jiuling.operate.ui.OperatePaymentActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name="com.jiuling.operate.ui.OperateMyNodeActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name="com.jiuling.operate.ui.OperateMyOrderActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name="com.jiuling.operate.ui.OperateCapitalFlowActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name="com.jiuling.operate.ui.OperatePaySuccessActivity"
+            android:launchMode="singleTask"/>
+
+    </application>
+
+</manifest>

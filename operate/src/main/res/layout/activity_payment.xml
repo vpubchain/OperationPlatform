@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#6CD58C"
+        android:textSize="18sp"
+        android:text="您的订单提交成功，请在24小时内完成支付，以免订单失效!"/>
+
+    <TextView
+        android:id="@+id/tv_order_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#222"
+        android:text="订单编号:xxx"/>
+
+    <TextView
+        android:id="@+id/node_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#222"
+        android:text="节点数量:1"/>
+
+    <TextView
+        android:id="@+id/tv_maybe_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#222"
+        android:text="应付金额:1800元"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_remaining_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#222"
+        android:text="支付剩余时间:09小时54分13秒"/>
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#3D3D3D"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="支付方式"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:id="@+id/rb_alipay"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:layout_marginLeft="10dp"
+            android:checked="true"
+            android:layout_gravity="center_vertical"/>
+        
+        
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_alipay"/>
+
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="大额款项，建议你使用支付宝支付，安全有保障！"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp">
+
+        <RadioButton
+            android:id="@+id/rb_wechat"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"/>
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_wechat"/>
+
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小额付款，建议你使用微信支付，安全有保障！"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp">
+
+
+
+        <RadioButton
+            android:id="@+id/rb_balance"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"/>
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_balance"/>
+
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="建议你使用余额支付，方便又快捷！"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实付款"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp" />
+
+
+        <TextView
+            android:id="@+id/tv_actual_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥ 2000.00"
+            android:textSize="18sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textColor="#E63A3A"/>
+
+
+    </LinearLayout>
+    
+    
+    <Button
+        android:id="@+id/bt_pay"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:text="确认支付"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#fff"
+        android:background="@drawable/shape_button_buy"/>
+
+    <!--<RadioGroup-->
+        <!--android:layout_marginTop="50dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="300dp">-->
+
+        <!--<RadioButton-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="90dp" />-->
+
+        <!--<RadioButton-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="90dp" />-->
+
+
+        <!--<RadioButton-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="90dp"-->
+            <!--android:background="@drawable/shape_button_buy" />-->
+
+
+
+    <!--</RadioGroup>-->
+
+
+
+
+
+</LinearLayout>
+</ScrollView>

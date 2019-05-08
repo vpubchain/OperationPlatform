@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="支付成功!"
+        android:textSize="28sp"
+        android:layout_marginTop="20dp"
+        android:textColor="#00AA00"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="共计支付金额:"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tv_amount_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" ￥ 0.01"
+            android:textColor="#E93333"
+            android:textSize="22sp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:background="#DADADA"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一个订单已经支付成功:"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 金额 ￥0.01元"
+            android:textColor="#00AA00"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单号:"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_order_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 0DFAJDFKJER45465116655"
+            android:textColor="#E63333"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击进入控制台查看我的主节点"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/bt_my_control"
+        android:layout_width="120dp"
+        android:text="我的控制台"
+        android:textColor="#fff"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_bg_violet"
+        android:layout_height="30dp" />
+
+
+
+</LinearLayout>

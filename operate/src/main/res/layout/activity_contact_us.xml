@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+
+    <!--<include-->
+    <!--android:id="@+id/init_title"-->
+    <!--layout="@layout/secure_title" />-->
+
+    <!--<include layout="@layout/include_header"/>-->
+
+
+    <TextView
+        android:id="@+id/tv_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="联系我们"
+        android:textSize="32sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#2C3E50"/>
+
+
+    <View
+        android:id="@+id/v_location"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/ic_map"
+        app:layout_constraintTop_toBottomOf="@+id/tv_preview"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_info"
+        app:layout_constraintTop_toBottomOf="@+id/v_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="电话：020:82510334"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="13sp"/>
+
+
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="邮箱：kf@90qkl.cn"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="13sp"/>
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_address"
+        app:layout_constraintTop_toBottomOf="@+id/ll_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="地址：广州市黄浦区文冲街道护林路1198号6楼604房"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:textSize="13sp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_advisory"
+        app:layout_constraintTop_toBottomOf="@+id/tv_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <View
+        android:layout_width="12dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="#000"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:text="ADVISORY"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="咨询服务"
+        android:layout_marginTop="5dp"
+        android:textSize="13sp"
+        android:layout_gravity="center_horizontal"/>
+
+
+        <!--app:layout_constraintDimensionRatio="H,16:6"-->
+
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_name_phone_info"
+        app:layout_constraintTop_toBottomOf="@+id/ll_advisory"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/ll_name"
+                style="@style/ll_fill_in2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/ll_phone"
+                app:layout_constraintHorizontal_weight="1"
+                android:layout_marginRight="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/tv_fill_in"
+                    android:text="姓名:"
+                    />
+
+                <EditText
+                    android:id="@+id/et_name"
+                    style="@style/et_fill_in2"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_phone"
+                style="@style/ll_fill_in2"
+                app:layout_constraintLeft_toRightOf="@id/ll_name"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/tv_fill_in"
+                    android:text="电话:"
+                    />
+
+                <EditText
+                    android:id="@+id/et_phone"
+                    style="@style/et_fill_in2"
+                    />
+
+            </LinearLayout>
+
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_email"
+        style="@style/ll_fill_in2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintTop_toBottomOf="@+id/ll_name_phone_info"
+        android:layout_marginRight="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/tv_fill_in"
+            android:text="邮箱:"
+            />
+
+        <EditText
+            android:id="@+id/et_email"
+            style="@style/et_fill_in2"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        style="@style/ll_fill_in2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintTop_toBottomOf="@+id/ll_email"
+        android:layout_marginRight="10dp"
+        android:minHeight="70dp"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/tv_fill_in"
+            android:text="咨询内容:"
+            android:layout_gravity="top"
+            android:layout_marginTop="5dp"
+            />
+
+        <EditText
+            android:id="@+id/et_content"
+            style="@style/et_fill_in2"
+            android:gravity="top"
+            android:padding="5dp"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shape_bg_violet"
+        android:gravity="center"
+        android:text="提交"
+        android:textSize="14.67sp"
+        android:textColor="#fff"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_content" />
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_follow_us"
+        app:layout_constraintTop_toBottomOf="@+id/tv_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="12dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="#000"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:text="ATTENTION"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关注我们"
+            android:layout_marginTop="5dp"
+            android:textSize="13sp"
+            android:layout_gravity="center_horizontal"/>
+
+
+        <!--app:layout_constraintDimensionRatio="H,16:6"-->
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@+id/ll_follow_us"
+        android:id="@+id/ll_attention_way"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_qrcode"/>
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/contact1"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/contact2"/>
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/contact3"/>
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/contact4"/>
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/contact5"/>
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_keep_record"
+        app:layout_constraintTop_toBottomOf="@+id/ll_attention_way"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Copyright©2018 Jiuling Blockchain Technology. All Rights Reserved."
+        android:layout_marginTop="10dp"
+        android:textSize="11sp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"/>
+
+
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/tv_keep_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="广州久零区块链技术有限公司 版权所有 | 粤IPC备18084203号"
+        android:layout_marginBottom="10dp"
+        android:textSize="11sp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"/>
+
+
+</android.support.constraint.ConstraintLayout>
+</ScrollView>

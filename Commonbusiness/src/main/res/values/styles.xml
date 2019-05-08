@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--name是我们在使用时要用到的资源的标志，parent是指当前的样式所继承的父类样式-->
+    <style name="alertDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--隐藏标题栏-->
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+
+        <!-- Base application theme. -->
+        <style name="BaseAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+            <!-- Customize your theme here. -->
+            <item name="colorPrimary">@color/colorPrimary</item>
+            <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+            <item name="colorAccent">@color/colorAccent</item>
+        </style>
+
+        <style name="AppTheme" parent="BaseAppTheme"></style>
+
+        <!-- loading 样式 -->
+        <style name="LoadingStyle" parent="@android:style/Theme.Dialog">
+            <item name="android:windowFrame">@null</item>
+            <item name="android:windowIsFloating">true</item>
+            <item name="android:windowIsTranslucent">false</item>
+            <item name="android:windowNoTitle">true</item>
+            <item name="android:windowBackground">@drawable/iosstyle_halftransparent_bg</item>
+            <item name="android:backgroundDimEnabled">true</item>
+        </style>
+
+        <style name="ToolBarBack">
+            <item name="android:layout_width">50dp</item>
+            <item name="android:layout_height">match_parent</item>
+            <item name="android:padding">10dp</item>
+        </style>
+
+        <style name="ToolBarTitle">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:textSize">18sp</item>
+            <item name="android:textColor">@color/commonTextColorLight</item>
+            <item name="android:layout_centerInParent">true</item>
+        </style>
+
+        <style name="ToolBarControl">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">match_parent</item>
+            <item name="android:layout_alignParentRight">true</item>
+            <item name="android:layout_centerVertical">true</item>
+            <item name="android:gravity">center</item>
+            <item name="android:padding">10dp</item>
+            <item name="android:textColor">@color/commonTextColorDark</item>
+            <item name="android:textSize">12sp</item>
+        </style>
+
+        <style name="ToolBarDivider">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">0.1dp</item>
+            <item name="android:layout_alignParentBottom">true</item>
+            <item name="android:background">#fc6eb7</item>
+        </style>
+
+        <style name="ItemTextTitle">
+            <item name="android:layout_width">0dp</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_weight">1</item>
+            <item name="android:padding">14dp</item>
+            <item name="android:textSize">14sp</item>
+            <item name="android:textColor">@color/itemTitleTextColor</item>
+        </style>
+
+        <style name="AlertDialog" parent="android:style/Theme.Dialog">
+            <item name="android:background">@android:color/transparent</item>
+            <item name="android:windowBackground">@android:color/transparent</item>
+            <item name="android:windowNoTitle">true</item>
+        </style>
+
+        <style name="NumberInputField">
+            <item name="android:inputType">number</item>
+        </style>
+
+        <style name="CommonRecyclerView">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:scrollbars">none</item>
+        </style>
+
+
+
+
+
+
+</resources>

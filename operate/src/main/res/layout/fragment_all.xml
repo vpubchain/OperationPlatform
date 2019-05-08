@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBE9F1"
+    xmlns:jiapu="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        jiapu:layout_marginLeftPercent="5%w"
+        jiapu:layout_marginRightPercent="5%w"
+        android:id="@+id/srl_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcv_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+        </android.support.v7.widget.RecyclerView>
+
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

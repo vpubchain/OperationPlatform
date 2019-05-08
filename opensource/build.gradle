@@ -1,0 +1,163 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+
+        //添加如下配置就OK了
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+                includeCompileClasspath = true
+            }
+        }
+
+    }
+
+//    compileSdkVersion rootProject.ext.android.compileSdkVersion
+//    buildToolsVersion rootProject.ext.android.buildToolsVersion
+//
+//    defaultConfig {
+//        minSdkVersion rootProject.ext.android.minSdkVersion
+//        targetSdkVersion rootProject.ext.android.targetSdkVersion
+//        versionCode rootProject.ext.android.versionCode
+//        versionName rootProject.ext.android.versionName
+//    }
+
+
+
+
+
+    sourceSets {
+        androidTest {
+            setRoot('src/test')
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'aars'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(dir: '../core/libs', include: ['*.jar'])
+
+
+
+    compile rootProject.ext.dependencies["appcompat-v7"]
+//    compile rootProject.ext.dependencies["design"]
+    compile rootProject.ext.dependencies["recyclerview"]
+    compile rootProject.ext.dependencies["palette"]
+//    compile rootProject.ext.dependencies["cardview"]
+    testCompile 'junit:junit:4.12'
+
+    //RxJava
+    compile rootProject.ext.dependencies["RxJava"]
+    compile rootProject.ext.dependencies["RxAndroid"]
+    compile rootProject.ext.dependencies["RxLifeCycle"]
+    compile rootProject.ext.dependencies["RxLifeCycleComponents"]
+    //版本已经没了
+//    compile rootProject.ext.dependencies["RxCache"]
+//    compile rootProject.ext.dependencies["RxCacheConvert"]
+
+    //Retrofit
+    compile rootProject.ext.dependencies["retrofit"]
+    compile rootProject.ext.dependencies["retrofitAdapter"]
+    compile rootProject.ext.dependencies["retrofitConverter"]
+
+    //OkHttp
+    compile rootProject.ext.dependencies["okhttp"]
+    compile rootProject.ext.dependencies["okhttp3Interceptor"]
+    compile rootProject.ext.dependencies["gson"]
+
+//    //dagger
+//    compile rootProject.ext.dependencies["dagger"]                        //需要Java8版本
+//    compile rootProject.ext.dependencies["javaAnnotation"]
+//    kapt rootProject.ext.dependencies["daggerCompiler"]
+//    compile 'com.google.dagger:dagger:2.x'
+//    annotationProcessor 'com.google.dagger:dagger-compiler:2.x'
+
+
+    //EventBus
+    compile rootProject.ext.dependencies["EventBus"]
+
+
+    //ARouter不参与
+
+    //GreenDao
+//    compile rootProject.ext.dependencies["greenDao"]
+//    compile rootProject.ext.dependencies["greenDaoHelper"]
+
+    //ButterKnife
+    compile rootProject.ext.dependencies["butterknife"]
+    compile rootProject.ext.dependencies["butterknifeCompiler"]
+
+    //LeakCanary
+//    debugCompile rootProject.ext.dependencies["leakCanaryDebug"]
+//    releaseCompile rootProject.ext.dependencies["leakCanaryRelease"]
+
+    //Logger
+    compile rootProject.ext.dependencies["logger"]
+
+    //Glide
+    compile rootProject.ext.dependencies["glide"]
+
+    //UI
+    compile rootProject.ext.dependencies["PercentLayout"]
+    compile rootProject.ext.dependencies["swipeMenu"]
+//    compile rootProject.ext.dependencies["galleryFinal"]
+//    compile rootProject.ext.dependencies["spinKit"]
+//    compile rootProject.ext.dependencies["FlowLayout"]
+//    compile rootProject.ext.dependencies["spinKit"]
+//    compile rootProject.ext.dependencies["Picker"]
+//    compile rootProject.ext.dependencies["PickerView"]
+
+    //permission
+//    compile rootProject.ext.dependencies["permission"]
+//    annotationProcessor rootProject.ext.dependencies["annotaionProcessorPermission"]
+    compile 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.3@aar'
+
+//    compile 'com.airbnb.android:lottie:2.2.5'
+
+
+
+    /////////////////////////
+
+    compile 'com.google.guava:guava:16.0.1'
+    compile 'com.google.code.findbugs:jsr305:2.0.1'
+    compile 'com.madgag.spongycastle:core:1.51.0.0'
+    compile 'com.google.protobuf:protobuf-java:2.5.0'
+    compile 'com.google.zxing:core:3.1.0'
+    compile 'ch.acra:acra:4.8.5'
+//    compile 'com.android.support:support-v4-preferencefragment:1.0.0@aar'
+//    compile 'cn.kongnannan:preferencefragment:1.1@aar'
+//    compile 'com.jakewharton:butterknife:7.0.1'
+//    compile 'org.web3j:core:3.3.1-android'
+    compile 'com.android.support.constraint:constraint-layout:1.1.2'
+//    compile 'com.android.support:cardview-v7:27.1.1'
+
+    //
+    compile 'com.google.code.gson:gson:2.8.2'  // 采用Gson解析
+//    compile 'com.squareup.retrofit2:retrofit:2.3.0' // retrofit的关键库
+//    compile 'com.squareup.retrofit2:adapter-rxjava2:+'
+//    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'  // 引入Rxjava和RxAndroid
+//    compile 'io.reactivex.rxjava2:rxjava:2.1.3'
+//    compile 'com.squareup.retrofit2:converter-gson:2.2.0'
+
+
+
+
+}

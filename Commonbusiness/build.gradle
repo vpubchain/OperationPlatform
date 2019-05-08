@@ -1,0 +1,74 @@
+apply plugin: 'com.android.library'
+//apply plugin: 'org.greenrobot.greendao'
+//
+//
+//greendao {
+//    //数据库的schema版本，也可以理解为数据库版本号
+//    schemaVersion 1
+//    //设置DaoMaster、DaoSession、Dao包名，也就是要放置这些类的包的全路径。
+//    daoPackage 'com.lianyun.commonbusiness.model.db.dao'
+//    //设置DaoMaster、DaoSession、Dao目录
+//    targetGenDir 'src/main/java'
+//}
+
+
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        /*ARouter*/
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+                includeCompileClasspath = true
+            }
+        }
+
+//        ndk {
+//            // 设置支持的SO库架构（开发者可以根据需要，选择一个或多个平台的so）
+//            abiFilters "armeabi", "arm64-v8a"
+//        }
+//        javaCompileOptions {
+//            // 显式声明支持注解
+//            annotationProcessorOptions {
+//                includeCompileClasspath true
+//            }
+//        }
+
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile rootProject.ext.dependencies["appcompat-v7"]
+    testCompile 'junit:junit:4.12'
+    //dagger
+    compile rootProject.ext.dependencies["dagger"]
+    //需要Java8版本
+    compile rootProject.ext.dependencies["javaAnnotation"]
+    annotationProcessor rootProject.ext.dependencies["daggerCompiler"]
+    /*ARouter*/
+    compile rootProject.ext.dependencies.ARouter
+    compile rootProject.ext.dependencies.ARouterCompiler
+    //GreenDao
+//    compile 'org.greenrobot:greendao:3.2.0'
+    compile project(':opensource')
+}

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingRight="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/shape_purple">
+
+    <TextView
+        android:id="@+id/tv_order_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#2C3E50"
+        android:text="节点名称：OD545FDASFE58561565615616"/>
+    <!--#7ED321-->
+
+    <LinearLayout
+        android:id="@+id/ll_order_status"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_order_name"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_order_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#2C3E50"
+            android:text="订单状态："/>
+
+        <TextView
+            android:id="@+id/tv_order_status"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_order_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#7ED321"
+            android:textStyle="bold"
+            android:text="已完成"/>
+
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/tv_order_money"
+        app:layout_constraintLeft_toRightOf="@+id/ll_order_status"
+        app:layout_constraintTop_toBottomOf="@+id/tv_order_name"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#2C3E50"
+        android:text="订单金额：￥8888"/>
+
+
+    <TextView
+        android:id="@+id/tv_order_buy_number"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_order_status"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#2C3E50"
+        android:text="购买数量：1"/>
+
+    <TextView
+        android:id="@+id/tv_order_info"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_order_buy_number"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#2C3E50"
+        android:text="产品消息：【按年计费】（不包含应用服务费）-提供多套标准网站模板 全场景部署"/>
+
+
+    <TextView
+        android:id="@+id/tv_order_time"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_order_info"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#2C3E50"
+        android:text="订单时间：2019-03-25 14:45:44"/>
+
+
+
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@+id/tv_order_time"
+        android:id="@+id/ll_more"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_pay_order"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="支付订单"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:textColor="#B7ACFF"/>
+
+
+        <TextView
+            android:id="@+id/tv_cancel_order"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="取消订单"
+            android:gravity="center_vertical"
+            android:textColor="#B7ACFF"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

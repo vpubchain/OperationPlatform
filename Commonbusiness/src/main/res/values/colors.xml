@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--<color name="colorPrimary">#c1c1c1</color>
+    <color name="colorPrimaryDark">#999999</color>
+    <color name="colorAccent">#FF4081</color>-->
+
+    <color name="colorMoreNormal">#ffffff</color>
+    <color name="colorMorePressed">#f5f5f5</color>
+    <color name="commonTextColorLight">#ffffff</color>
+    <color name="commonTextColorDark">#161616</color>
+    <color name="itemTitleTextColor">#313131</color>
+
+    <color name="colorDialogNegativeText">#0073FF</color>
+    <color name="colorDialogNegativeTextPressed">#016bec</color>
+    <color name="colorDialogPositiveText">#FF3B30</color>
+    <color name="colorDialogPositiveTextPressed">#ec372c</color>
+    <color name="textRed2">#fd0101</color>
+    <color name="color_blue">#3387CC</color>
+
+
+    <color name="status_bar">#3387cc</color>
+    <color name="status_scan">#99000000</color>
+    <color name="blue_text">#3387cc</color>
+    <color name="grey_text">#ccc</color>
+</resources>
